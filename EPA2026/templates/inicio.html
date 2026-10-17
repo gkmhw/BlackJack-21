@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Las Vegas Jogos</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/stylei.css')}}">
+</head>
+
+<body>
+    <header>
+        <p class="bem-vindo">Bem-vindo ao</p>
+        <br>
+        <h1><span class="black">Black</span><span class="jack">jack</span></h1>
+    </header>
+    <main>
+        <section class="apresentacao">
+            <h2>Bem-vindo ao Blackjack</h2>
+
+            <div class="paragrafo">
+                <p>
+                    O Blackjack é um jogo de cartas que tem como objetivo formar uma pontuação
+                    próxima de 21, tomando cuidado para não ultrapassar esse valor.
+                    Apesar de parecer simples, cada escolha pode mudar o resultado
+                    da partida.
+                </p>
+
+                <p>
+                    Antes de começar, você pode acessar uma página com as principais
+                    regras, os valores das cartas e uma explicação de como o jogo
+                    funciona. Depois disso, é só entrar na mesa e jogar.
+                </p>
+            </div>
+        </section>
+
+        <section class="jogos">
+        </section>
+
+        <article class="card-jogo">
+            <div class="naipes">
+                <img src="../static/cartas_png/SEIS_DE_PAUS.png" alt="Seis de paus">
+                <img src="../static/cartas_png/SETE_DE_OUROS.png" alt="Sete de ouros">
+                <img src="../static/cartas_png/DOIS_DE_COPAS.png" alt="Dois de copas">
+                <img src="../static/cartas_png/K_DE_ESPADAS.png" alt="Rei de espadas">
+            </div>
+            <h3>Blackjack</h3>
+                <a href="{{url_for('regras')}}">Jogar</a>
+            </article>
+    </main>
+</body>
+
+</html>

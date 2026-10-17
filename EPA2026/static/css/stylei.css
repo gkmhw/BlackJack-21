@@ -1,0 +1,290 @@
+@font-face {
+    font-family: "Las Vegas";
+    src: url("fontes/las_vegas/LasVegasDemo.otf");
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url("fontes/Montserrat/static/Montserrat-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Granesta";
+    src: local("Granesta"), url("fontes/granesta/Granesta.otf");
+    font-weight: 100;
+
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    color: white;
+    font-family: "Montserrat", Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #000000, #303030, #000000);
+    background-size: 300% 300%;
+    background-attachment: fixed;
+    animation: body-gradient 6s ease-in-out infinite alternate;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.85);
+}
+
+@keyframes body-gradient {
+    from {
+        background-position: 0% 0%;
+    }
+
+    to {
+        background-position: 100% 100%;
+    }
+}
+
+header {
+    padding: 55px 20px 35px;
+    border-bottom: 3px solid #d5a82c;
+}
+
+.bem-vindo {
+    font-size: 18px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+
+h1 {
+    font-family: "Granesta";
+    src: local("Granesta"), url("fontes/granesta/Granesta.otf");
+    color: var(--cor-dos-textos);
+    font-weight: 100;
+    font-size: 5.5rem;
+    white-space: nowrap;
+    align-items: center;
+
+    width: var(--largura-dos-textos);
+    text-align: center;
+
+    span.black {
+
+        font-size: 5rem;
+        color: rgb(255, 255, 255);
+
+    }
+
+    span.jack {
+
+        font-size: 5rem;
+        color: rgb(247, 4, 4);
+
+    }
+}
+
+.subtitulo {
+    margin-top: 18px;
+    color: #f2c94c;
+    font-size: 24px;
+    font-weight: bold;
+    letter-spacing: 12px;
+}
+
+main {
+    width: 90%;
+    max-width: 850px;
+    margin: auto;
+    padding: 35px 0 50px;
+}
+
+.apresentacao h2 {
+    margin-bottom: 12px;
+    color: #f2c94c;
+    font-family: "Las Vegas";
+    font-size: xx-large;
+
+}
+
+.jogos h2 {
+    margin-bottom: 12px;
+    color: #f2c94c;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.apresentacao p {
+    max-width: 700px;
+    margin: 10px auto;
+    line-height: 1.7;
+}
+
+.apresentacao .descer {
+    margin-top: 30px;
+    color: #f2c94c;
+}
+
+.jogos {
+    margin-top: 30px;
+}
+
+.card-jogo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+    margin: 18px auto 0;
+    padding: 24px 20px;
+    background-color: rgba(5, 55, 36, 0.85);
+    border: 1px solid #d5a82c;
+    border-radius: 8px;
+}
+
+.naipes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.naipes img {
+    display: block;
+    width: 35px;
+    height: auto;
+}
+
+.card-jogo h3 {
+    margin: 0;
+    color: #ffd75e;
+    font-size: 28px;
+}
+
+.card-jogo p {
+    line-height: 1.5;
+}
+
+.card-jogo a {
+    display: inline-block;
+    margin-top: 16px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #bd1725;
+    border-radius: 3px;
+    transition: 0.2s;
+}
+
+.card-jogo a:hover {
+    background-color: #e02b3a;
+    transform: scale(1.05);
+}
+
+footer {
+    padding: 20px;
+    color: #bbbbbb;
+    font-size: 13px;
+}
+
+
+.pagina-regras {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+
+}
+
+
+.regrasp {
+
+    margin-bottom: 12px;
+    color: #f2c94c;
+    font-family: "Las Vegas";
+    font-size: xx-large;
+
+}
+
+.regrasp img {
+    width: 35px;
+    height: auto;
+    align-items: center;
+}
+
+.regraspa {
+
+    margin-bottom: 12px;
+    color: #f1ba12;
+    font-family: "Las Vegas";
+    font-size: 60px;
+
+}
+
+.pagina-regras table {
+    width: 100%;
+    max-width: 650px;
+    margin: 20px 0 10px;
+    color: #acffbe;
+    border-collapse: collapse;
+    background-color: #07472e;
+}
+
+.pagina-regras th {
+    padding: 9px;
+    border: 1px solid #f1ba12;
+}
+
+.pagina-regras td {
+    padding: 9px;
+    border: 1px solid #f1ba12;
+}
+
+.pagina-regras th {
+    color: #ffffff;
+    background-color: #f1ba12;
+}
+
+.pagina-regras tr:nth-child(even) {
+    background-color: #0a5b3d;
+}
+
+.paragrafo {
+    font-size: x-large;
+    font-family: 𝙼𝚘𝚗𝚘𝚜𝚙𝚊𝚌𝚎;
+}
+
+.paragrafor {
+    line-height: 1.4;
+    font-size: 20px;
+    font-family: 𝙼𝚘𝚗𝚘𝚜𝚙𝚊𝚌𝚎;
+}
+
+.botaor {
+    padding: 30px;
+    align-items: center;
+}
+
+.links a:hover {
+    background-color: #e02b3a;
+    transform: scale(1.05);
+}
+
+.links a {
+
+    display: inline-block;
+    margin-top: 16px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+    background-color: #bd1725;
+    border-radius: 3px;
+    transition: 0.2s;
+
+}

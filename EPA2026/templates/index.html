@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/styles.css')}}">
+</head>
+
+<body id="body">
+    <header>
+
+    </header>
+    <nav>
+
+    </nav>
+
+    <main class="jogo">
+
+        <section class="mesa">
+
+
+            <div class="titulo">
+                <h2>Mesa</h2>
+
+            </div>
+
+            <div class="cartas" id="cartas_mesa">
+
+
+            </div>
+
+
+            </div>
+
+        </section>
+
+        <section class="botoes">
+            <h1><a class="botaor" href="/" title="Voltar ao início"><span class="black">Black</span><span class="jack">jack</span></a></h1>
+
+            <div class="placar">
+                <div class="placar_titulo">PLACAR</div>
+                <div class="placar_valores">
+                    <span>Player:</span>
+                    <span id="placar_player">0</span>
+                    <span>Mesa:</span>
+                    <span id="placar_mesa">0</span>
+                </div>
+            </div>
+
+            <div class="mensagem">
+                <p id="alerta"></p>
+            </div>
+
+        </section>
+
+        <section class="player">
+
+            <div class="titulo">
+                <span>Player</span>
+                <p id="contagem-player"></p>
+
+            </div>
+
+            <div class="cartas" id="cartas_player">
+
+            </div>
+
+            <div class="controles">
+                <div class="botao" id="button_get">
+                    <p>Pegar carta</p>
+                </div>
+                <div class="botao" id="button_stop">
+                    <p>Parar</p>
+                </div>
+                <div class="botao" id="button_restart">
+                    <p>Salvar</p>
+                </div>
+            </div>
+
+        </section>
+
+
+    </main>
+    <footer>
+
+    </footer>
+
+    <script type="module" src="{{url_for('static', filename='js/logica_jogo.js')}}"></script>
+
+
+    <!-- <div class="overlay" id="overlay" style="background-color: rgba(0, 0, 0, 0.5);">
+        <div class="quadro">
+            <input type="text" placeholder="Digite seu nome">
+            <button onclick="" id="btsalvar">Salvar</button>
+        </div>
+    </div> -->
+
+</body>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Blackjack</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/stylei.css')}}">
+</head>
+
+<body class="pagina-regras">
+    <h2 class="regraspa">Regras do Blackjack</h2>
+
+    <p class="paragrafor">O objetivo é chegar o mais perto possível de 21 pontos sem ultrapassar esse valor.
+    <br>As cartas de 2 a 10 valem o próprio número. Valete, Dama e Rei valem 10. O Ás vale 1.
+    <br>Você pode pegar outra carta ou parar. Se passar de 21 pontos, perde.</p>
+
+   <table class="regrasp">
+        <tr>
+            <th>Carta</th>
+            <th>Nome</th>
+            <th>Valor</th>
+        </tr>
+        <tr>
+            <td><img src="../static/cartas_png/AS_DE_PAUS.png" alt="Um de paus"></td>
+            <td>Um</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td><img src="../static/cartas_png/DOIS_DE_COPAS.png" alt="Dois de copas"></td>
+            <td>Dois</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td><img src="../static/cartas_png/TRES_DE_ESPADAS.png" alt="Três de paus"></td>
+            <td>Três</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td><img src="../static/cartas_png/QUATRO_DE_OUROS.png" alt="Quatro de ouros"></td>
+            <td>Quatro</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td><img src="../static/cartas_png/CINCO_DE_PAUS.png" alt="Cinco de paus"></td>
+            <td>Cinco</td>
+            <td>5</td>
+        </tr>
+        <tr>
+            <td><img src="../static/cartas_png/SEIS_DE_COPAS.png" alt="Seis de copas"></td>
+            <td>Seis</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td><img src="../static/cartas_png/SETE_DE_ESPADAS.png" alt="Sete de paus"></td>
+            <td>Sete</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td><img src="../static/cartas_png/OITO_DE_OUROS.png" alt="Oito de ouros"></td>
+            <td>Oito</td>
+            <td>8</td>
+        </tr>
+        <tr>
+            <td><img src="../static/cartas_png/NOVE_DE_PAUS.png" alt="Nove de paus"></td>
+            <td>Nove</td>
+            <td>9</td>
+        </tr>
+        <tr>
+            <td><img src="../static/cartas_png/DEZ_DE_COPAS.png" alt="Dez de copas"></td>
+            <td>Dez</td>
+            <td>10</td>
+        </tr>
+    </table>
+
+    <div class="links">
+        <a class="botaor" href="{{url_for('home')}}">Voltar ao inicio</a>
+        <a class="botaor" href="{{'blackjack'}}">Jogar</a>
+    </div>
+</body>
+
+</html>

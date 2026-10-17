@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regras do Blackjack</title>
+    <link rel="stylesheet" href="{{url_for('static', filename='css/stylei.css')}}">
+</head>
+<script type="module" src="{{url_for('static', filename='js/exibir_recordes.js')}}"></script>
+<body class="pagina-regras">
+    <h2 class="regraspa">Ranking</h2>
+
+
+    <table id="ranking" class="regrasp">
+        <tr>
+            <th>Posição</th>
+            <th>Nome</th>
+            <th>Pontuação</th>
+        </tr>
+    </table>
+
+    <div class="links">
+        <a class="botaor" href="{{url_for('home')}}">Voltar ao inicio</a>
+        <a class="botaor" href="{{'blackjack'}}">Jogar</a>
+    </div>
+</body>
+
+</html>
